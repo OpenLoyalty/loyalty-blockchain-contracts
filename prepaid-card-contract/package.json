@@ -1,0 +1,54 @@
+{
+  "name": "prepaid-card-contract",
+  "version": "1.0.0",
+  "description": "Expiring Prepaid card contract",
+  "main": "index.js",
+  "author": "Open Loyalty",
+  "license": "Apache-2.0",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenLoyalty/loyalty-blockchain-contracts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OpenLoyalty/loyalty-blockchain-contracts/issues"
+  },
+  "homepage": "https://www.openloyalty.io/",
+  "engineStrict": true,
+  "engines": {
+    "node": "^18.16",
+    "npm": ">=9"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --check **/*.js",
+    "prettier:fix": "prettier --write **/*.js",
+    "test": "mocha --recursive",
+    "build": "",
+    "start": "fabric-chaincode-node start"
+  },
+  "dependencies": {
+    "fabric-contract-api": "^2.5.4",
+    "fabric-shim": "^2.5.4",
+    "json-stringify-deterministic": "^1.0.1",
+    "lodash": "^4.17.21",
+    "long": "^5.2.0",
+    "loyalty-blockchain-common": "^1.0.6",
+    "sort-keys-recursive": "^2.0.0",
+    "stop": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.44.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.4.1",
+    "chai": "^4.3.7",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^10.2.0",
+    "sinon": "^15.0.1",
+    "sinon-chai": "^3.7.0"
+  }
+}

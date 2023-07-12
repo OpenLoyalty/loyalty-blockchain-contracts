@@ -1,0 +1,13 @@
+{
+    "index": {
+        "fields": [
+            "owner",
+            "expirationDate",
+            "enforcementDate",
+            "state"
+        ]
+    },
+    "name" : "smart-index",
+    "type" : "json",
+    "ddoc": "smart-index"
+}
