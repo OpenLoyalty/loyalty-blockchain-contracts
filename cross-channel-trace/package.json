@@ -1,0 +1,57 @@
+{
+    "name": "cross-channel-trace",
+    "version": "1.0.0",
+    "description": "Cross-channel book-keeper contract to synchronize two chain state",
+    "main": "index.js",
+    "engines": {
+        "node": "^18.16",
+        "npm": ">=9"
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "nyc mocha --recursive",
+        "build": "",
+        "start": "fabric-chaincode-node start"
+    },
+    "engineStrict": true,
+    "author": "Open Loyalty",
+    "license": "Proprietary",
+    "private": true,
+    "dependencies": {
+        "loyalty-blockchain-common": "^1.0.2",
+        "fabric-contract-api": "^2.5.3",
+        "fabric-shim": "^2.5.3",
+        "json-stringify-deterministic": "^1.0.1",
+        "lodash": "^4.17.21",
+        "long": "^5.2.0",
+        "stop": "^3.1.0"
+    },
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "chai-as-promised": "^7.1.1",
+        "eslint": "^4.19.1",
+        "mocha": "^8.0.1",
+        "nyc": "^14.1.1",
+        "sinon": "^6.0.0",
+        "sinon-chai": "^3.2.0"
+    },
+    "nyc": {
+        "exclude": [
+            "coverage/**",
+            "test/**",
+            "index.js",
+            ".eslintrc.js"
+        ],
+        "reporter": [
+            "text-summary",
+            "html"
+        ],
+        "all": true,
+        "check-coverage": false,
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+    }
+}
