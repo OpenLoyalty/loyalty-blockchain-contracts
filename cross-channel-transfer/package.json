@@ -1,7 +1,7 @@
 {
-  "name": "cross-channel-trace",
+  "name": "cross-channel-transfer",
   "version": "1.0.0",
-  "description": "Cross-channel book-keeper contract to synchronize two chain state",
+  "description": "Cross-channel transaction flow execution contract to deterministically transfer assets between two chains",
   "main": "index.js",
   "author": "Open Loyalty",
   "license": "Apache-2.0",

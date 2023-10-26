@@ -69,7 +69,6 @@ class CrossChannelTrace extends contracts.ExpiringBanknoteBase {
     async GetEntry(ctx, entryId) {
         const txID = ctx.stub.getTxID();
         const clientId = this._getClientID(ctx);
-        const
         const channelName = ctx.stub.getChannelID();
         const txTime = utils.getTxTimestampSeconds(ctx);
         const timeoutSecondsSinceEpoch = 60 + txTime;
